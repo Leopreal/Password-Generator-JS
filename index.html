@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="register-container">
+        <div id="register-banner">
+            <div id="banner-layer">
+                <h1>Seja Bem-Vindo(a)</h1>
+            </div>
+        </div>
+        <div id="register-form">
+            <h2>Cria a sua Conta:</h2>
+            <p>Registre-se para utilizar as funcionalidades do site</p>
+            <div class="form-control">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="Digite o seu Nome">
+            </div>
+            <div class="form-control">
+                <label for="email">Email:</label>
+                <input type="text" type="email" id="email" placeholder="Digite o seu E-Mail">
+            </div>
+            <div class="form-control">
+                <label for="password">Nome:</label>
+                <input type="password" type="password" id="password" placeholder="Digite a sua Senha">
+            </div>
+            <p>Quer ajuda para criar uma senha segura? 
+                <span id="open-generate-password">Clique Aqui.</span>
+            </p>
+            <div id="generate-options" class="hide">
+                <p>Selecione as opções que deseja: </p>
+                <div class="form-control">
+                    <label for="lenght">Quantidade de Caracteres</label>
+                    <input type="text" name="lenght" id="lenght" value="10">
+                </div>
+                <div class="form-control">
+                    <label for="letters">Letras: </label>
+                    <input type="checkbox" name="letters" id="letters" checked>
+                </div>
+                <div class="form-control">
+                    <label for="numbers">Números</label>
+                    <input type="checkbox" name="numbers" id="numbers" checked>
+                </div>
+                <div class="form-control">
+                    <label for="symbols">Simbolos</label>
+                    <input type="checkbox" name="symbols" id="symbols" checked>
+                </div>
+                <button id="generate-password">Criar Senha</button>
+            </div>
+            <div id="generated-password">
+                <p>Aqui esta a sua senha: </p>
+                <h4></h4>
+                <button id="copy-password">Copiar</button>
+            </div>
+            <div class="form-control">
+                <label for="confirm-senha">Confirme sua Senha:</label>
+                <input type="password" type="confirm-senha" id="confirm-senha" placeholder="Confirmar Senha">
+            </div>
+            <input type="submit" value="Cadastrar">
+        </div>
+    </div>
+</body>
+</html>
